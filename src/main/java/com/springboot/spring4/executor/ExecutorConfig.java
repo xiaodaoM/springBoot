@@ -16,7 +16,7 @@ public class ExecutorConfig implements AsyncConfigurer{
 
 	/**
 	 * 重写 getAsyncExecutor 返回一个ThreadPoolTaskExecutor
-	 * 获取到了基于线程池的 executor
+	 * 获取到了基于线程池的 executor 
 	 */
 	@Override
 	public Executor getAsyncExecutor() {
