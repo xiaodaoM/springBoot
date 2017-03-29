@@ -22,9 +22,9 @@ public class ExecutorConfig implements AsyncConfigurer{
 	public Executor getAsyncExecutor() {
 		// TODO Auto-generated method stub
 		ThreadPoolTaskExecutor taskExecutor = new ThreadPoolTaskExecutor();
-		taskExecutor.setCorePoolSize(5);
-		taskExecutor.setMaxPoolSize(10);
-		taskExecutor.setQueueCapacity(25);
+		taskExecutor.setCorePoolSize(5);//线程池维护线程的最少数量
+		taskExecutor.setMaxPoolSize(10);//线程池维护线程的最大数量
+		taskExecutor.setQueueCapacity(25);//线程池所使用的缓冲队列
 		taskExecutor.initialize();
 		return taskExecutor;
 	}
