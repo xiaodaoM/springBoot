@@ -12,6 +12,12 @@ public class TestBean {
 		this.content = content;
 	}
 
+	public TestBean(String content) {
+		super();
+		// TODO Auto-generated constructor stub
+		this.content = content;
+	}
+
 	
 	
 	
